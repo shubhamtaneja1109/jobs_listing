@@ -1,0 +1,69 @@
+{% extends 'quiz/adminbase.html' %}
+{% load widget_tweaks %}
+{% block content %}
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+      a:link {
+        text-decoration: none;
+      }
+  
+
+        .bg-c-blue {
+        background: red;
+      }
+
+      .bg-c-green {
+        background: black;
+      }
+
+      .bg-c-yellow {
+        background: green;
+      }
+
+      .bg-c-pink {
+        background: blue;
+      }
+  
+  
+
+    </style>
+  </head>
+<br><br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-xl-4">
+        <div class="card bg-c-blue order-card">
+          <div class="card-block">
+            <h6 class="m-b-20"> <a href="admin-view-teacher" style="text-decoration: none;color:white;">Total Teacher</a> </h6>
+            <h2 class="text-right"><i class="fas fa-chalkboard-teacher f-left"></i><span>{{total_teacher}}</span></h2>
+            
+          </div>
+        </div>
+      </div>
+            
+          </div>
+        </div>
+      </div>
+  
+     
+    </div>
+  </div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+<script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+
+{% endblock content %}

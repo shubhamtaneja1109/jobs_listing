@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<style>
+  .jumbotron{
+    margin-bottom: 0px;
+    color: white;
+    background-image:url("https://images.pexels.com/photos/716398/pexels-photo-716398.jpeg?cs=srgb&dl=pexels-rahul-716398.jpg&fm=jpg");
+  background-size: 999px;
+  }
+
+</style>
+<body>
+  {% include "quiz/navbar.html" %}
+<br>
+
+<section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
+  <div class="container text-center">
+    <h1 class="display-1 text-info">Welcome to <br> Let's make with Shubham</h1>
+    <p class="lead">We organize quizzes on various topics.<br> <hr color="white"> <h2> Who are you? Login according to your designation </h2></p>
+ <div>
+         <a href="/student/studentclick" class="btn btn-primary">Student</a>
+     <a href="/adminclick" class="btn btn-primary">Teachers/Admin</a> </div>
+<br><br>
+    <p class="basic">Hi, Are you a new User? <br> Want to move further!!!!</br><br> </br></p>
+
+    <h2><strong> Start Your Journey Here: <br><br> To create your account,<br> click on the following buttons according to your designation</strong></h2>
+
+
+    <a class="btn btn-success btn-lg"  href="/student/studentsignup" class="btn btn-success" class="btn btn-primary btn-sm" style="padding-right: 35px;"><i class="fa fa-user-plus" aria-hidden="true"></i> Students</a>
+
+  </div>  
+</section>
+  {% include "quiz/footer.html" %}
+
+
+</body>
+
+</html>
