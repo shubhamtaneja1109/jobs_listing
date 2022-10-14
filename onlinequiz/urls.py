@@ -1,5 +1,7 @@
+from django.conf import settings
 from django.urls import path, include
 from django.contrib import admin
+from django.views.static import serve
 from quiz import views
 from django.contrib.auth.views import LogoutView, LoginView
 

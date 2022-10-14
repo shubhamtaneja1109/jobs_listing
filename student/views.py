@@ -131,3 +131,6 @@ def check_marks_view(request, pk):
 def student_marks_view(request):
     courses = QMODEL.Course.objects.all()
     return render(request, 'student/student_marks.html', {'courses': courses})
+
+
+

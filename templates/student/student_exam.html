@@ -19,22 +19,120 @@
     .row {
       margin: 100px;
     }
+    #myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 2px solid #ddd;
+  margin-bottom: 12px;
+}
   </style>
 </head>
 <br><br>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
 <div class="container">
   <div class="panel panel-primary">
     <div class="panel-heading">
-      <h6 class="panel-title">Courses</h6>
+      <h6 class="panel-title">Jobs Listed below!</h6>
     </div>
     <table class="table table-hover" id="dev-table">
       <thead>
         <tr>
 
-          <th>Exam Name</th>
+          <th>Job Name</th>
           
-          <th>Take Exam</th>
+          <th>Vacancies </th>
+          <th> Job Description</th>
+          <th align="justify">Experience </th>
+          <th> Location </th>
+          <th> Apply Link </th>
         </tr>
+
+
+        <tr>
+      <td> Software Developer </td>
+      <td> 10 </td>
+        <td> We are looking for a Software Developer to build and implement functional programs. You will work with other Developers and Product Managers throughout the software development life cycle.
+
+In this role, you should be a team player with a keen eye for detail and problem-solving skills. If you also have experience in Agile frameworks and popular coding languages (e.g. JavaScript), we’d like to meet you.
+
+          Your goal will be to build efficient programs and systems that serve user needs.</td>
+<td> Freshers</td>
+          <td> Bengalore</td>
+          <td> <a href=""> Click Here </a> </td>
+        </tr>
+        <tr>
+      <td> Full Stack Developer </td>
+          <td> 5 </td>
+        <td><p>We are looking for a Full Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment.<br>
+          As a Full Stack Developer, you should be comfortable around both front-end and back-end coding languages, development frameworks and third-party libraries. You should also be a team player with a knack for visual design and utility.
+          <br>If you’re also familiar with Agile methodologies, we’d like to meet you.</p></td>
+          <td> 0 -1 years</td>
+          <td> Delhi </td>
+          <td> <a href=""> Click Here </a> </td>
+        </tr>
+
+      <tr>
+      <td> Data Analytics </td>
+          <td> 5 </td>
+        <td>As a data analyst, you should possess the following eight skills:
+          <ul>Cleansing and preparing data</ul>
+          <ul>Analyzing and exploring data</ul>
+          <ul>Expertise in statistics</ul>
+          <ul>Analyzing and visualizing data</ul>
+          <ul>Reports and dashboards</ul>
+          <ul>Communication and writing</ul>
+          <ul>Expertise in the domain</ul>
+          <ul>Solution-oriented</ul>
+        </td>
+        <td> Freshers</td>
+        <td> Mumbai</td>
+        <td> <a href="/student/Apply_Link"  style="padding-right: 35px;">Click here</a> </td>
+      </tr>
+      <tr>
+      <td> UX/UI Developer </td>
+          <td> 5 </td>
+        <td>We are looking for a dynamic UI/UX designer who will be responsible for the user experience (UX) and user interface (UI) design of our various digital assets. You will ensure that all elements of the online user experience are optimized for improved usability, usefulness, and exceptional visual design.
+<br>
+The successful candidate will evidence a passion for delivering adaptive and creative solutions to UI/UX design problems by staying up to date with best practices and emerging trends in user experience design and user interface technology.</td>
+      <td> Freshers</td>
+        <td> Bengalore</td>
+        <td> <a href=""> Click Here </a> </td>
+      </tr>
+
+      <tr>
+      <td> Product Analyzer developer </td>
+          <td> 2 </td>
+        <td>We are looking for a dynamic candidate with a deep understanding of the X industry and its market behaviour and aid in developing the company’s product portfolio.
+
+Your major role would be making product recommendations based on market research, feedback, customer interaction, etc and act as a bridge between the market and the product development team.
+
+You would be expected to work in synchronization with various departments such as sales, product development, customer support, marketing and finance to ensure that suitable and financially viable products are developed.</td>
+      <td> Minimum 2 years </td>
+        <td> Chennai</td>
+        <td> <a href=""> Click Here </a> </td>
+      </tr>
       </thead>
       {% for t in courses %}
       <tr>

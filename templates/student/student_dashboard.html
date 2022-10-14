@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link href="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
@@ -16,84 +16,111 @@
       a:link {
         text-decoration: none;
       }
-  
-      .order-card {
-        color: rgb(255, 255, 255);
-      }
-  
+
       .bg-c-blue {
-        background: #04868f;
+        background: blue;
       }
-  
+
+      .bg-c-black {
+        background: black;
+        color: white;
+      }
+
       .bg-c-green {
-        background:#4C51BF;
+        background: green;
       }
-  
+
       .bg-c-yellow {
-        background: #F56565;
+        background: yellow;
       }
-  
-      .bg-c-pink {
-        background: #663a30;
+
+      .bg-c-red {
+        background: red;
       }
-  
-  
+      .bg-c-powder-blue {
+        background: powderblue;
+      }
+
+
       .card {
-        
-        -webkit-box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
+
         box-shadow: 0 1px 2.94px 0.06px rgba(4, 26, 55, 0.16);
         border: 1px solid black;
         margin-bottom: 30px;
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
       }
-  
-      .card .card-block {
-        padding: 25px;
-      }
-  
-      .order-card i {
-        font-size: 26px;
-      }
-  
-      .f-left {
-        float: left;
-      }
-  
-      .f-right {
-        float: right;
-      }
-      header {
-      left: 0px;
-      right: 0px;
-    }
     </style>
   </head>
-<br><br>
+
+<h1 align="center"> Welcome to LifyJobs</h1><br>
 
   <div class="container">
     <div class="row">
-      
-  
+
+
       <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-red order-card">
+          <div class="card-block">
+            <h6 class="m-b-20">Software Engineer <br> <br>  Deadline- less than 3 days left! Register now.</a></h6>
+           <h2 class="text-right"><i class="fas fa-book f-left"></i><span>{{total_course}}</span></h2>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-black order-card">
+          <div class="card-block">
+            <h6 class="m-b-20">Test Engineer <br> <br>  Deadline- Last date to be announced! Register now.</a></h6>
+            <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
+
+          </div>
+        </div>
+      </div>
+
+         <div class="col-md-4 col-xl-6">
         <div class="card bg-c-yellow order-card">
           <div class="card-block">
-            <h6 class="m-b-20">Total Exams Available</h6>
-           <h2 class="text-right"><i class="fas fa-book f-left"></i><span>{{total_course}}</span></h2>
-            
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4 col-xl-6">
-        <div class="card bg-c-pink order-card">
-          <div class="card-block">
-            <h6 class="m-b-20">Total Questions</h6>
+            <h6 class="m-b-20">UX/UI Developer <br> <br>  Deadline- less than 14 days left! Register now.</a></h6>
             <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
-            
+
           </div>
         </div>
       </div>
+
+         <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-green order-card">
+          <div class="card-block">
+            <h6 class="m-b-20">Test Engineer <br> <br>  Deadline- less than 21 days left! Register now.</a></h6>
+            <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
+
+          </div>
+        </div>
+      </div>
+
+
+              <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-blue order-card">
+          <div class="card-block">
+            <h6 class="m-b-20">Business Analyst <br> <br>  Deadline- less than 30 days left! Register now.</a></h6>
+            <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
+              </div>
+        </div>
+      </div>
+
+
+                <div class="col-md-4 col-xl-6">
+        <div class="card bg-c-powder-blue order-card">
+          <div class="card-block">
+            <h6 class="m-b-20">Product Operation <br> <br>  Registeration closed.</a></h6>
+            <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 

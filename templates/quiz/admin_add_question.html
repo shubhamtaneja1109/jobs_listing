@@ -21,24 +21,24 @@
 <form method="POST" autocomplete="off" style="margin:100px;margin-top: 0px;">
     {%csrf_token%}
     <div class="form-group">
-        <label for="question">Course</label>
+        <label for="question">Job name</label>
       {% render_field questionForm.courseID|attr:'required:true' class="form-control"  %}
         <br>
 
         <br>
-      <label for="question_number">Marks</label>
+      <label for="question_number">No of questions</label>
       {% render_field questionForm.marks|attr:'required:true' class="form-control" %}
         <br>
-      <label for="option1">Option 1</label>
+      <label for="Question1">Question 1</label>
       {% render_field questionForm.option1|attr:'required:true' class="form-control" %}
         <br>
-      <label for="option2">Option 2</label>
+      <label for="Question2">Question 2</label>
       {% render_field questionForm.option2|attr:'required:true' class="form-control"  %}
         <br>
-      <label for="option3">Option 3</label>
+      <label for="Question3">Question 3</label>
       {% render_field questionForm.option3|attr:'required:true' class="form-control" %}
         <br>
-      <label for="option4">Option 4</label>
+      <label for="Question4">Question 4</label>
       {% render_field questionForm.option4|attr:'required:true' class="form-control" %}
         <br>
       <label for="answer">Answer</label>
