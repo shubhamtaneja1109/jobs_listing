@@ -1,0 +1,7 @@
+# jobs_listing
+
+1. Download the Clone project. 
+2. Extract the file.
+3. open the project, go to terminal, write pip install requirements.txt
+4. now type python manage.py migrate
+5. now type python manage.py runserver
